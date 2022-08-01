@@ -15,22 +15,22 @@ async def sett(event):
     msg = await button.get_reply_message() 
     await event.delete()
     async with Drone.conversation(event.chat_id) as conv: 
-        xx = await conv.send_message("Send me any image for thumbnail as a `reply` to this message.")
+        xx = await conv.send_message("Kirimi saya gambar apa saja untuk thumbnail sebagai `balas` untuk pesan ini.")
         x = await conv.get_reply()
         if not x.media:
-            xx.edit("No media found.")
+            xx.edit("Tidak ada media di temukan.")
         mime = x.file.mime_type
         if not 'png' in mime:
             if not 'jpg' in mime:
                 if not 'jpeg' in mime:
-                    return await xx.edit("No image found.")
+                    return await xx.edit("Tidak menemukan gambar.")
         await xx.delete()
-        t = await event.client.send_message(event.chat_id, 'Trying.')
+        t = await event.client.send_message(event.chat_id, 'Mencoba.')
         path = await event.client.download_media(x.media)
         if os.path.exists(f'{event.sender_id}.jpg'):
             os.remove(f'{event.sender_id}.jpg')
         os.rename(path, f'./{event.sender_id}.jpg')
-        await t.edit("Temporary thumbnail saved!")
+        await t.edit("Temporary thumbnail tersimpan!")
         
 @Drone.on(events.callbackquery.CallbackQuery(data="rem"))
 async def remt(event):  
