@@ -12,9 +12,9 @@ from telethon import events
 
 from ethon.telefunc import force_sub
 
-ft = f"To use this bot you've to join @{fs}."
+ft = f"Untuk menggunakan bot ini silahkan join @{fs} terlebih dahulu."
 
-message = "Send me the message link you want to start saving from, as a reply to this message."
+message "Kirimi saya tautan pesan yang ingin Anda mulai simpan, sebagai balasan ke media ini."
           
 # To-Do:
 # Make these codes shorter and clean
