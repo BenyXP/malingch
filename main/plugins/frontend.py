@@ -14,7 +14,7 @@ from ethon.telefunc import force_sub
 
 ft = f"Untuk menggunakan bot ini silahkan join @{fs} terlebih dahulu."
 
-message "Kirimi saya tautan pesan yang ingin Anda mulai simpan, sebagai balasan ke media ini."
+message = "Kirimi saya tautan pesan yang ingin Anda mulai simpan, sebagai balasan ke media ini."
           
 # To-Do:
 # Make these codes shorter and clean
