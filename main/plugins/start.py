@@ -35,15 +35,15 @@ async def sett(event):
 @Drone.on(events.callbackquery.CallbackQuery(data="rem"))
 async def remt(event):  
     Drone = event.client            
-    await event.edit('Trying.')
+    await event.edit('Mencoba.')
     try:
         os.remove(f'{event.sender_id}.jpg')
-        await event.edit('Removed!')
+        await event.edit('Terhapus!')
     except Exception:
-        await event.edit("No thumbnail saved.")                        
+        await event.edit("Tidak ada thumbnail tersimpan.")                        
   
 @Drone.on(events.NewMessage(incoming=True, pattern=f"{S}"))
 async def start(event):
-    text = "Send me Link of any message to clone it here, For private channel message, send invite link first.\n\n**SUPPORT:** @TeamDrone"
+    text = "Kirimi saya Tautan pesan apa pun untuk mengkloningnya di sini, Untuk pesan saluran pribadi, kirim tautan undangan terlebih dahulu.\n\n**Owner:** ​​<a href>tg://user?id=1923480697>lepin</a href>"
     await start_srb(event, text)
     
