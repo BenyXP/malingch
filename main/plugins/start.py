@@ -44,6 +44,6 @@ async def remt(event):
   
 @Drone.on(events.NewMessage(incoming=True, pattern=f"{S}"))
 async def start(event):
-    text = "Kirimi saya Tautan pesan apa pun untuk mengkloningnya di sini, Untuk pesan saluran pribadi, kirim tautan undangan terlebih dahulu.\n\n**Owner:**@tuhanalamsemesta"
+    text = "Kirimi saya Tautan pesan apa pun untuk mengkloningnya di sini, Untuk pesan saluran pribadi, kirim tautan undangan terlebih dahulu.\n\n**Owner:**@pislopandgawl"
     await start_srb(event, text)
     
