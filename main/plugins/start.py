@@ -32,7 +32,7 @@ async def start_srb(event, st):
                       buttons=[
                               [Button.inline("SET THUMB.", data="set"),
                                Button.inline("REM THUMB.", data="rem")],
-                              [Button.url("Owner", url="t.me/kielwleowleo")]])
+                              [Button.url("Lepin", url="t.me/tuhanfwb")]])
                               
 
 @Drone.on(events.callbackquery.CallbackQuery(data="set"))
